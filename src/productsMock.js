@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: 1,
+    title: "Manga Pack",
+    description: "Includes all 36 original volumes",
+    price: 350,
+    stock: 50,
+    img: "https://res.cloudinary.com/dmdbuaptb/image/upload/v1686501282/REACT%20Ranma/manga_pack_kiipit.jpg",
+    category: "manga",
+  },
+  {
+    id: 2,
+    title: "Anime Pack",
+    description: "includes all 161 episodes in 7 blu-ray discs",
+    price: 250,
+    stock: 30,
+    img: "https://res.cloudinary.com/dmdbuaptb/image/upload/v1686501283/REACT%20Ranma/anime_pack_wilhvb.jpg",
+    category: "anime",
+  },
+  {
+    id: 3,
+    title: "OVA & Movie Pack",
+    description: "includes all 13 OVAs & 2 Movies in 3 blu-ray discs",
+    price: 150,
+    stock: 20,
+    img: "https://res.cloudinary.com/dmdbuaptb/image/upload/v1686501283/REACT%20Ranma/ovamovie_pack_a9c8rp.jpg",
+    category: "ovamovie",
+  },
+  {
+    id: 4,
+    title: "Complete Pack",
+    description: "The all-in-one complete ultimate colection",
+    price: 600,
+    stock: 20,
+    img: "https://res.cloudinary.com/dmdbuaptb/image/upload/v1686501283/REACT%20Ranma/complete_pack_uvwbjr.jpg",
+    category: "complete",
+  },
+]

@@ -1,33 +1,24 @@
 .cart_div {
- display: flex;
- justify-content: space-around;
-
-}
-
-.cart_icon .cart_widget{
-position: fixed;
-margin-left: 1rem;
-
-}
-
-.cart_icon .cart_div_number{
-   background-color: rgb(11, 198, 27);
-   padding: 6px;
-   margin-top: 1rem;
-   border-radius: 10px;position: fixed;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 .cart_div_number {
-   color: azure;
+  color: azure;
 }
 
 .cart_div ul {
-   display: flex;
+  display: flex;
 }
 
 .cart_div ul li {
-   color: red;
-   display: flex;
-   margin-left: 3rem;
+  color: red;
+  display: flex;
+  margin-right: 3rem;
+}
 
+img {
+  width: 7.5rem;
+  border-radius: 5px;
 }
