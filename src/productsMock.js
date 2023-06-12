@@ -19,7 +19,7 @@ export const products = [
   },
   {
     id: 3,
-    title: "OVA & Movie Pack",
+    title: "Ova & Movie Pack",
     description: "includes all 13 OVAs & 2 Movies in 3 blu-ray discs",
     price: 150,
     stock: 20,

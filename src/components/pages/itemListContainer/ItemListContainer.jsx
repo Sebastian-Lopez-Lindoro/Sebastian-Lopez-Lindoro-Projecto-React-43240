@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
-//import CounterContainer from "../../common/counter/CounterContainer.jsx"
 import { products } from "../../../productsMock.js"
 import ItemList from "./ItemList.jsx"
+import "./itemList.css"
 
 export const ItemListContainer = () => {
   const [items, setItems] = useState([])

@@ -1,20 +1,27 @@
-.div_cards {
+.div_cards_detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 1.5rem;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-left: 18rem;
+  margin-right: 18rem;
   justify-content: space-between;
   background-image: linear-gradient(135deg, black, blue, red, red, blue, black);
   border-radius: 7px;
 }
 
-h3 {
+.card_title {
   color: white;
+  margin-bottom: 1rem;
+  font-size: larger;
+  font-weight: bolder;
 }
 
-h4 {
+.card_description {
   color: white;
+  margin-top: 1rem;
+  font-size: large;
 }
 
 .div_cards .div_img {
