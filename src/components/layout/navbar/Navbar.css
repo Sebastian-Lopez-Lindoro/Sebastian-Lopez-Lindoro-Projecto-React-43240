@@ -1,24 +1,32 @@
 .cart_div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 1rem;
+  padding-top: 0.3rem;
+  background-color: black;
+  align-items: center;
 }
 
 .cart_div_number {
   color: azure;
 }
 
-.cart_div ul {
-  display: flex;
-}
-
-.cart_div ul li {
-  color: red;
-  display: flex;
-  margin-right: 3rem;
-}
-
 img {
   width: 7.5rem;
   border-radius: 5px;
+}
+
+a.link_button {
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  background-image: linear-gradient(45deg, blue, red, red, red, red, blue);
+  margin-left: 1rem;
+  font-size: larger;
+  font-weight: bolder;
+  border-radius: 7px;
+}
+
+a.link_button:hover {
+  color: yellow;
 }

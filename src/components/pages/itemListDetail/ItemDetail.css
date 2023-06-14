@@ -18,6 +18,13 @@
   font-weight: bolder;
 }
 
+.card_price {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: large;
+}
+
 .card_description {
   color: white;
   margin-top: 1rem;
