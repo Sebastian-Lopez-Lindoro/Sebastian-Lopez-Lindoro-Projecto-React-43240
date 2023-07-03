@@ -3,8 +3,12 @@ import { BsFillCartCheckFill } from "react-icons/bs"
 import "./Navbar.css"
 
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { CartContext } from "../../../context/CartContext"
 
 export const Navbar = () => {
+  const { getTotalItems } = useContext(CartContext)
+  let totalItems = getTotalItems()
   return (
     <>
       <div className="cart_div">
@@ -32,7 +36,7 @@ export const Navbar = () => {
 
         <Link to="/cart">
           <div className="cart_icon">
-            <Badge badgeContent={4} color="primary">
+            <Badge badgeContent={totalItems} showZero color="primary">
               <BsFillCartCheckFill className="cart_widget" color="red" size="3rem" />
             </Badge>
           </div>
