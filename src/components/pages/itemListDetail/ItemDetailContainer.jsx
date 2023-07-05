@@ -1,9 +1,11 @@
 import { useContext, useEffect, useState } from "react"
 import ItemDetail from "./ItemDetail"
-import { products } from "../../../productsMock"
+
 import { useParams } from "react-router-dom"
 import { CartContext } from "../../../context/CartContext"
 import Swal from "sweetalert2"
+import { db } from "../../../firebaseConfig"
+import { collection, getDoc, doc } from "firebase/firestore"
 
 const ItemDetailContainer = () => {
   const [productSelected, setProductSelected] = useState({})
@@ -28,13 +30,11 @@ const ItemDetailContainer = () => {
   }
 
   useEffect(() => {
-    let productFind = products.find((product) => product.id === +id)
-
-    const getProduct = new Promise((res) => {
-      res(productFind)
+    let itemsCollection = collection(db, "products")
+    let refDoc = doc(itemsCollection, id)
+    getDoc(refDoc).then((res) => {
+      setProductSelected({ id: res.id, ...res.data() })
     })
-
-    getProduct.then((res) => setProductSelected(res)).catch((err) => console.log(err))
   }, [id])
 
   return <div>{productSelected.price ? <ItemDetail productSelected={productSelected} addToCart={addToCart} onAdd={onAdd} /> : <h1>cargando</h1>}</div>

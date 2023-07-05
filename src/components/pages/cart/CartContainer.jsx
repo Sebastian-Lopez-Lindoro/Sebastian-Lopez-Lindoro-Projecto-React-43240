@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { CartContext } from "../../../context/CartContext"
 import { Button } from "@mui/material"
 import Swal from "sweetalert2"
+import { Link } from "react-router-dom"
 
 const CartContainer = () => {
   const { cart, clearCart, removeById, getTotalPrice } = useContext(CartContext)
@@ -30,6 +31,7 @@ const CartContainer = () => {
     <div>
       {cart.length > 0 && <h2>total cart is: {total}</h2>}
       {cart.length > 0 ? <button onClick={emptyCart}>Clear Cart</button> : <h1>Cart is empty</h1>}
+      <Link to="/checkout">{cart.length > 0 && <button>Checkout</button>}</Link>
       {cart.map((product) => {
         return (
           <div key={product.id}>

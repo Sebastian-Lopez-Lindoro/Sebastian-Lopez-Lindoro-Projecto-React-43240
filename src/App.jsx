@@ -3,6 +3,7 @@ import Layout from "./components/layout/Layout"
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { menuRoutes } from "./routes/menuRoutes"
 import CartContextProvider from "./context/CartContext"
+import { Link } from "react-router-dom"
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
             element={
               <div>
                 <h1>404 NOT FOUND</h1>
-                <button>Back To Main Site</button>
+                <Link to="/">
+                  <button>Back To Main Site</button>
+                </Link>
               </div>
             }
           />
