@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 import ItemList from "./ItemList.jsx"
-import "./itemList.css"
+import "./ItemList.css"
 import { useParams } from "react-router-dom"
 import { PulseLoader } from "react-spinners"
 import { db } from "../../../firebaseConfig.js"
