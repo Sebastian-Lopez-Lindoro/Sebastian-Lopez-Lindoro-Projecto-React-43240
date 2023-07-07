@@ -1,5 +1,5 @@
 import { ItemCount } from "../../common/itemCount/ItemCount"
-import "./itemDetail.css"
+import "./ItemDetail.css"
 
 const ItemDetail = ({ productSelected, onAdd }) => {
   return (
