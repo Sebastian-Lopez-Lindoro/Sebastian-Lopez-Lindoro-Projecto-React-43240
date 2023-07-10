@@ -1,0 +1,49 @@
+.div_form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.div_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.div_form_inside {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.div_form_inside .form_text {
+  margin: 1rem;
+}
+
+.place_order_button {
+  color: white;
+  margin-top: 1.3rem;
+  padding: 0.3rem;
+  font-family: "Braah One", sans-serif;
+  font-size: large;
+  background-image: linear-gradient(135deg, black, blue, red, red, blue, black);
+  border-radius: 10px;
+}
+
+.place_order_button:hover {
+  color: yellow;
+}
+
+.form_title {
+  background-image: linear-gradient(135deg, black, blue, red, red, blue, black);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+h1 {
+  background-image: linear-gradient(135deg, black, blue, red, red, blue, black);
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}

@@ -1,7 +1,10 @@
+import "./Footer.css"
+
 const Footer = () => {
   return (
-    <div>
-      <h1>HERE GOES THE FOOTER</h1>
+    <div className="copyrights">
+      <p>Rumiko Takahashi Copyright© 1987-2023 all rights reserved</p>
+      <p>Disclaimer this website is only for educational/informational purposes</p>
     </div>
   )
 }

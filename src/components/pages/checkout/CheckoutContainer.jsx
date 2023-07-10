@@ -42,7 +42,7 @@ const CheckoutContainer = () => {
     }),
   })
 
-  return <div>{orderId ? <h1>Your purchase was succeful, you order number is: {orderId}</h1> : <Checkout handleSubmit={handleSubmit} handleChange={handleChange} errors={errors} />}</div>
+  return <div> {orderId ? <h1>Purchase succeful, you order number is: {orderId}</h1> : <Checkout handleSubmit={handleSubmit} handleChange={handleChange} errors={errors} />}</div>
 }
 
 export default CheckoutContainer

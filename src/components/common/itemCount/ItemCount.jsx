@@ -6,10 +6,16 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
   return (
     <>
       <div className="count--container">
-        <button onClick={decrement}>-</button>
+        <button className="button_count" onClick={decrement}>
+          -
+        </button>
         <span>{count}</span>
-        <button onClick={increment}>+</button>
-        <button onClick={() => onAdd(count)}>add to cart</button>
+        <button className="button_count" onClick={increment}>
+          +
+        </button>
+        <button className="button_add" onClick={() => onAdd(count)}>
+          add to cart
+        </button>
       </div>
     </>
   )

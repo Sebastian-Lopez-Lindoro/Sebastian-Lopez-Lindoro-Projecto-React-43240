@@ -6,6 +6,13 @@ import { CartContext } from "../../../context/CartContext"
 import Swal from "sweetalert2"
 import { db } from "../../../firebaseConfig"
 import { collection, getDoc, doc } from "firebase/firestore"
+import { PulseLoader } from "react-spinners"
+
+const override = {
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "10rem",
+}
 
 const ItemDetailContainer = () => {
   const [productSelected, setProductSelected] = useState({})
@@ -37,7 +44,7 @@ const ItemDetailContainer = () => {
     })
   }, [id])
 
-  return <div>{productSelected.price ? <ItemDetail productSelected={productSelected} addToCart={addToCart} onAdd={onAdd} /> : <h1>cargando</h1>}</div>
+  return <div>{productSelected.price ? <ItemDetail productSelected={productSelected} addToCart={addToCart} onAdd={onAdd} /> : <PulseLoader cssOverride={override} size="30px" color="#d63636" />}</div>
 }
 
 export default ItemDetailContainer

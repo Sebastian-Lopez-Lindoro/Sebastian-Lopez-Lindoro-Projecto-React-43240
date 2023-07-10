@@ -1,3 +1,33 @@
 span {
   color: rgb(255, 255, 255);
 }
+
+.button_count {
+  color: white;
+  padding: 0.3rem;
+  font-family: "Braah One", sans-serif;
+  background-image: linear-gradient(45deg, red, red, blue, red, red);
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  font-size: larger;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.button_count:hover {
+  color: yellow;
+}
+
+.button_add {
+  color: white;
+  padding: 0.5rem;
+  font-family: "Braah One", sans-serif;
+  background-image: linear-gradient(45deg, blue, red, red, red, blue);
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  font-size: medium;
+}
+
+.button_add:hover {
+  color: yellow;
+}
